@@ -1,0 +1,211 @@
+:root {
+  --primary-dark: #121926;
+  --bg-light: #f8fafd;
+  --border-color: #e5e7eb;
+  --text-gray: #6b7280;
+}
+
+body {
+  background-color: var(--bg-light);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.checkout-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.checkout-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.checkout-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.item-badge {
+  background-color: #a3aab5;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.checkout-layout {
+  display: flex;
+  gap: 2px;
+  background-color: #f1f4f9; /* Subtle divider look */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Left Section */
+.cart-section {
+  flex: 1;
+  background: #f1f4f9;
+  padding: 40px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.item-details {
+  display: flex;
+  gap: 15px;
+}
+
+.item-image {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 8px;
+  object-fit: contain;
+  border: 1px solid #eee;
+}
+
+.item-info h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.item-color {
+  color: var(--text-gray);
+  margin: 4px 0;
+}
+
+.item-quantity {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.item-actions {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.item-price {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #cbd5e1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Coupon Section */
+.coupon-section {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.coupon-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+.apply-btn {
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Summary */
+.summary-section {
+  margin-top: 40px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: var(--text-gray);
+}
+
+.summary-row.total {
+  color: black;
+  font-weight: 800;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+/* Right Section - Form */
+.form-section {
+  flex: 1;
+  background: white;
+  padding: 40px;
+}
+
+.section-title {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.input-field {
+  margin-bottom: 20px;
+}
+
+.input-field label {
+  display: block;
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #f9fafb;
+}
+
+.continue-btn {
+  width: 100%;
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form-group.disabled {
+  border-top: 1px solid #f3f4f6;
+  padding-top: 25px;
+  margin-top: 25px;
+  color: #9ca3af;
+}
