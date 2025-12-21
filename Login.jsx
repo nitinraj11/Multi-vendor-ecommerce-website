@@ -2,15 +2,7 @@ import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import "./Login1.css";
 
-// Optional: demo credentials for testing
-// admin@example.com / pass123 (admin role)
-// vendor@example.com / pass123 (vendor role)
-// customer@example.com / pass123 (customer role)
 
-/*
-  Note: To avoid CORS in development, the frontend requests to /api/* are proxied to the backend.
-  If running the backend separately on port 4000, create a dev proxy or start both servers.
-*/
 
 function Login() {
   const navigate = useNavigate();
@@ -117,3 +109,4 @@ function Login() {
 }
 
 export default Login;
+
